@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gran Apertura · AA Solutions Comercial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="invitacion">
+
+  <!-- SECCIÓN 1 -->
+  <section class="slide slide-1 fade-bottom">
+    <img src="images/slide1.png" alt="Invitación privada · Gran Apertura AA Solutions Comercial">
+
+    <div class="ribbon" id="ribbon">
+      <span class="ribbon-half ribbon-left"></span>
+      <span class="ribbon-half ribbon-right"></span>
+      <span class="ribbon-bow">
+        <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+          <path d="M55 40 L40 85 L55 78 Z" fill="#a97f34"/>
+          <path d="M65 40 L80 85 L65 78 Z" fill="#a97f34"/>
+          <path d="M58 40 C 58 15, 10 10, 8 40 C 10 65, 58 60, 58 40 Z" fill="#e3bf70" stroke="#9c7a30" stroke-width="2"/>
+          <path d="M62 40 C 62 15, 110 10, 112 40 C 110 65, 62 60, 62 40 Z" fill="#e3bf70" stroke="#9c7a30" stroke-width="2"/>
+          <rect x="51" y="29" width="18" height="22" rx="3" fill="#c9a24b" stroke="#9c7a30" stroke-width="2"/>
+        </svg>
+      </span>
+      <span class="ribbon-hint">Toca para inaugurar ✂</span>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2 -->
+  <section class="slide slide-2 fade-bottom">
+    <img src="images/slide2.png" alt="Esta noche es para ti">
+  </section>
+
+  <!-- SECCIÓN 3 -->
+  <section class="slide slide-3 fade-bottom">
+    <img src="images/slide3.png" alt="Doce años de evolución">
+  </section>
+
+  <!-- SECCIÓN 4a: encabezado + fecha + dirección -->
+  <section class="slide slide-4a">
+    <img src="images/slide4a.png" alt="Cóctel de apertura · Viernes 02 Octubre 2026">
+  </section>
+
+  <!-- CONTEO REGRESIVO (HTML + CSS puro) -->
+  <section class="countdown-block">
+    <p class="countdown-label">Falta para el gran momento</p>
+    <div id="countdown" class="countdown">
+      <div class="countdown-item">
+        <span id="cd-days">00</span>
+        <small>Días</small>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-item">
+        <span id="cd-hours">00</span>
+        <small>Horas</small>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-item">
+        <span id="cd-mins">00</span>
+        <small>Min</small>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-item">
+        <span id="cd-secs">00</span>
+        <small>Seg</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4b: botones Ver ubicación / Confirmar asistencia -->
+  <section class="slide slide-4b">
+    <img src="images/slide4b.png" alt="Botones ver ubicación y confirmar asistencia">
+
+    <a class="hotspot hotspot-location"
+       href="https://www.google.com/maps/search/?api=1&query=Bella+Terra+Mall+Santiago+Republica+Dominicana"
+       target="_blank" rel="noopener"
+       aria-label="Ver ubicación en Google Maps"></a>
+
+    <a class="hotspot hotspot-confirm"
+       href="https://wa.me/18095551234?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20la%20Gran%20Apertura%20de%20AA%20Solutions%20Comercial%20el%2002%20de%20octubre."
+       target="_blank" rel="noopener"
+       aria-label="Confirmar asistencia por WhatsApp"></a>
+  </section>
+
+  <!-- SECCIÓN 4c: cierre + logo -->
+  <section class="slide slide-4c">
+    <img src="images/slide4c.png" alt="Cierre de invitación y logo AA Solutions Comercial">
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
