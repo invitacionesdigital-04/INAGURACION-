@@ -165,11 +165,7 @@ html, body{
   text-align: center;
   max-width: 420px;
   width: 100%;
-  padding: 2.4rem 1.8rem;
-  background: linear-gradient(180deg, rgba(10,35,80,0.55), rgba(4,24,48,0.7));
-  border: 1px solid rgba(201,162,75,0.45);
-  border-radius: 18px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+  padding: 2rem 1.8rem;
 }
 
 .welcome-eyebrow{
