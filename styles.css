@@ -58,8 +58,24 @@ html, body{
 }
 .slide-2{ z-index: 40; margin-top: -24px; }
 
-.slide-3{ z-index: 30; margin-top: calc(var(--overlap) * -1); }
-.slide-4a{ z-index: 20; margin-top: calc(var(--overlap) * -1); }
+/* La imagen 3 tiene su propio título ("DE UN SUEÑO...") pegado al borde
+   superior: con el solape general de 70px queda tapado/atenuado por el
+   difuminado de la imagen 2. Se usa un solape corto (18px), igual que en
+   el caso anterior, para disimular la unión sin cubrir ese texto. */
+.slide-2.fade-bottom img{
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 18px), transparent 100%);
+          mask-image: linear-gradient(to bottom, black calc(100% - 18px), transparent 100%);
+}
+.slide-3{ z-index: 30; margin-top: -18px; }
+
+/* La imagen 4a tiene su propio título ("CÓCTEL DE APERTURA") pegado al
+   borde superior: mismo caso, se usa un solape corto (18px) para que el
+   difuminado de la imagen 3 no lo cubra. */
+.slide-3.fade-bottom img{
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 18px), transparent 100%);
+          mask-image: linear-gradient(to bottom, black calc(100% - 18px), transparent 100%);
+}
+.slide-4a{ z-index: 20; margin-top: -18px; }
 
 /* Las piezas 4a/4b/4c y los bloques nativos son del mismo tramo navy,
    se cortaron por color sólido: van pegadas, sin solape ni difuminado */
