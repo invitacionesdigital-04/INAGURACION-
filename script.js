@@ -37,3 +37,4 @@ function actualizarConteo() {
 
 actualizarConteo();
 const temporizador = setInterval(actualizarConteo, 1000);
+
