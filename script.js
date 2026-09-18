@@ -37,18 +37,3 @@ function actualizarConteo() {
 
 actualizarConteo();
 const temporizador = setInterval(actualizarConteo, 1000);
-
-// Lazo inaugural: se corta al presionarlo o al hacer scroll
-const ribbon = document.getElementById("ribbon");
-if (ribbon) {
-  let cortado = false;
-  const cortarLazo = () => {
-    if (cortado) return;
-    cortado = true;
-    ribbon.classList.add("is-cut");
-  };
-  ribbon.addEventListener("click", cortarLazo);
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 120) cortarLazo();
-  }, { passive: true });
-}
